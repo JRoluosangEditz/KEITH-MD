@@ -5,13 +5,13 @@ You don't have to set this if you deploy using heroku because you can simply set
 
 const session = process.env.SESSION || '';
 
-const prefix = process.env.PREFIX || '';
-const mycode = process.env.CODE || "254";
-const author = process.env.STICKER_AUTHOR || 'Keith';
-const packname = process.env.PACKNAME || 'keith';
-const dev = process.env.DEV || '254748387615';
-const DevKeith = dev.split(",");
-const botname = process.env.BOTNAME || 'KEITH-MD';
+const prefix = process.env.PREFIX || '✓';
+const mycode = process.env.CODE || "91";
+const author = process.env.STICKER_AUTHOR || '۝AstrO۝';
+const packname = process.env.PACKNAME || '۝AstrO۝';
+const dev = process.env.DEV || '917085345102';
+const DevKeith = dev.split("✓");
+const botname = process.env.BOTNAME || '۝AstrO۝';
 const mode = process.env.MODE || 'public';
 const gcpresence = process.env.GC_PRESENCE || 'false';
 const antionce = process.env.ANTIVIEWONCE || 'true';
@@ -24,10 +24,10 @@ const appname = process.env.APPNAME || 'true';
 const antispam = process.env.ANTISPAM || 'true';
 const chatbot = process.env.CHAT_BOT || 'true';
 const antilink = process.env.ANTILINK || 'true';
-const autoreact = process.env.AUTOREACT || 'true';
+const autoreact = process.env.AUTOREACT || 'false';
 const antibot = process.env.ANTIBOT || 'true';
 const anticall = process.env.ANTICALL || 'true';
-const antibad = process.env.ANTI_BAD_WORD || 'true';
+const antibad = process.env.ANTI_BAD_WORD || 'false';
 const antidelete = process.env.ANTIDELETE || 'true';
 const autoview = process.env.AUTOVIEW_STATUS || 'true';
 const autolike = process.env.AUTOLIKE_STATUS || 'true';
