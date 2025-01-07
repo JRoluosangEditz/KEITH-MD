@@ -1,19 +1,20 @@
 module.exports = async (context) => {
     const { client, m, text } = context;
 
-    try {
-        if (!text) return m.reply("This is Keith assistant what is your query?");
 
-       
-        const { default: Gemini } = await import('gemini-ai');
+const ai = require('unlimited-ai');
+if (!text) return m.reply("provide text");
 
-        const gemini = new Gemini("AIzaSyDNO5AWTAL9buuRtqe3MZKXNhQCdGIljyk");
-        const chat = gemini.createChat();
+ (async () => { 
 
-        const res = await chat.ask(text);
+const model = 'gpt-4-turbo-2024-04-09'; 
 
-        await m.reply(res);
-    } catch (e) {
-        m.reply("I am unable to generate responses\n\n" + e);
-    }
-};
+
+const messages = [ { role: 'user', content: text }, { role: 'system', content: 'You are an assistant in WhatsApp. You are called Keith. You respond to user commands.' } ]; 
+
+await m.reply(await ai.generate(model, messages)); 
+
+})();
+
+
+}
