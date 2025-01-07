@@ -5,13 +5,13 @@ You don't have to set this if you deploy using heroku because you can simply set
 
 const session = process.env.SESSION || '';
 
-const prefix = process.env.PREFIX || '✓';
-const mycode = process.env.CODE || "917085345102";
-const author = process.env.STICKER_AUTHOR || '۝AstrO۝';
-const packname = process.env.PACKNAME || '۝AstrO۝';
-const dev = process.env.DEV || '917085345102';
-const DevKeith = dev.split("✓");
-const botname = process.env.BOTNAME || '۝AstrO۝';
+const prefix = process.env.PREFIX || '®';
+const mycode = process.env.CODE || "919366928699";
+const author = process.env.STICKER_AUTHOR || 'Baby monster 👻',
+const packname = process.env.PACKNAME || 'Baby monster 👻',
+const dev = process.env.DEV || '919366928699';
+const DevKeith = dev.split("®");
+const botname = process.env.BOTNAME || 'Baby monster 👻';
 const mode = process.env.MODE || 'public';
 const gcpresence = process.env.GC_PRESENCE || 'false';
 const antionce = process.env.ANTIVIEWONCE || 'true';
